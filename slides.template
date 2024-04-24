@@ -9,9 +9,11 @@
 	</head>
 	<body>
 		<div class="reveal">
+		    {{ range .Filenames -}}
 			<div class="slides">
-                <section data-markdown="{{ .Filename }}" data-separator="^\n---\n$" data-separator-vertical="^\n--\n$"></section>
+                <section data-markdown="{{ . }}" data-separator="^\n---\n$" data-separator-vertical="^\n--\n$"></section>
             </div>
+			{{ end -}}
 		</div>
 
 		<script src="reveal.js/reveal.js"></script>
