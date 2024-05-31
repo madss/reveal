@@ -192,6 +192,10 @@ Fragments
 	- Item one
 	- Item two <!-- .element: class="fragment" data-fragment-index="1" -->
 	- Item three <!-- .element: class="fragment" data-fragment-index="2" -->
+
+Override styling
+
+	<!-- .slide: style="font-size: 0.7em" -->
 `)
 	os.Exit(0)
 }
